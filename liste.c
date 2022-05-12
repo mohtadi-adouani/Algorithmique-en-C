@@ -125,7 +125,7 @@ struct liste * ajouter_debut(int v,struct liste * l){
     return l;
 }
 
-
+// ajoute un int a la positition i
 struct liste * ajouter_indice(int i, int v,struct liste * l){
     
     int taille = taille_liste(l);
@@ -195,7 +195,7 @@ struct liste * supprimer_debut(liste * l){
 }
 
 
-//supprimer debut
+//supprimer fin
 struct liste * supprimer_fin(liste * l){
 
     struct cellule * current = l->debut;
@@ -226,7 +226,7 @@ struct liste * supprimer_fin(liste * l){
 
 
 
-
+//supprime indice i
 struct liste * supprimer_indice(int i,struct liste * l){
     
     int taille = taille_liste(l);
